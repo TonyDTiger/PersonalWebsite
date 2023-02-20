@@ -1,0 +1,47 @@
+<!-- HTML Guide: https://devdocs.io/html-elements/ -->
+<!-- HTML Guide 2: https://www.w3schools.com/html/default.asp -->
+<!-- Emmet Cheatsheet: https://docs.emmet.io/cheat-sheet/ -->
+<!-- Mozilla Developer's Wiki: https://developer.mozilla.org/en-US/ -->
+
+<!-- Below is an HTML 5 boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Webpage is encoded using UTF-8 Unicode character set for max compatibility -->
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta-tags tell how the browser should render the webpage -->
+    <meta name="description" content="Tony's contact info with message box">
+    <meta name="keywords" content="GNC, ADCS, Matlab, Simulink, Python">
+    <meta name="author" content="Tony Ly">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony's Personal Site - Contact Me🛰️</title>
+</head>
+<body>
+    <h1> <strong>Contact Info</strong> </h1> <!-- Bold -->
+    <p> To add: Phone number</p>
+    <p> To add: email</p>
+    <p> To add: message box to send email</p>
+    
+    <!-- Create form for user to send an email -->
+    <!-- Assumes user has a mail application installed , TODO: have an alternative where the user can send the email directly on the website-->
+    <form action="mailto:info@tony.ly@colorado.edu" method="post" enctype="text/plain">
+        <div class="">
+          <label for="name">Enter your name: </label>
+          <input type="text" name="name" id="name" required>    
+        </div>
+        <div class="">
+          <label for="email">Enter your email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="">
+            <label for="message">Enter a message: </label>
+            <br>
+            <textarea name="message" id="" cols="75" rows="10"></textarea>
+          </div>
+        <div class="">
+          <input type="submit" value="Send email!">
+        </div>
+      </form>
+</body>
+</html>
